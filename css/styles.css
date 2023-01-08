@@ -1,0 +1,404 @@
+
+
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4756df;
+  --secondary-color: #ff7235;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+
+body{
+    background-color: #91D8E4;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    margin:0px;
+    
+}
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav h1 {
+  color: var(--primary-color);
+}
+
+nav a {
+  color: var(--primary-color);
+  transition: var(--transition);
+}
+nav a:hover {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 1.9rem;
+}
+
+nav ul li {
+  font-weight: var(--bold-font);
+}
+.burger-menu {
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+div{
+    background-color: #91D8E4;
+}
+p{
+    line-height: 2;
+}
+h1{
+    margin-top:0;
+    color:black;
+    font-size: 5rem;
+    font-family: 'Sacramento', cursive;
+    margin: 50px auto 0 auto;
+
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+h3{
+
+   font-family: 'Montserrat', sans-serif;
+   color: #0b0d0d;
+}
+hr{
+    border:dotted #080808 6px;
+    border-bottom: none;
+    width:4%;
+    margin: 100px auto 100px auto;
+}
+
+.profile-pic{
+  width:15%;
+}
+
+.top-container{
+    
+    background-color: #91D8E4;
+    position:relative;
+    padding-top:10px;   
+}
+.pro:hover{
+  color:#ff7235;
+}
+.middle-container{
+   margin:100px 0px;
+}
+.bottom-container{
+    background-color:#4756df;
+    padding: 50px 0 20px;
+}
+.footer-link{
+  color: #EAF6F6;
+}
+.footer-link:hover{
+  color:#30e3cb
+}
+.pro{
+   margin-top:0;
+   color:black;
+   font-size: 2.5rem;
+}
+.skill-row{
+    width:50%;
+    margin:100px auto 100px auto;
+    text-align:left;
+    line-height: 2;
+}
+
+.computer-img{
+    width:25%;
+    float: left;
+    margin-right:100px;
+}
+.chilli-img{
+    width:25%;
+    float: right;
+    margin-left:100px;
+    border-radius: 50%;
+}
+.btn {
+    background: #4756df;
+   
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-top: 400px;
+  }
+  
+  .btn:hover {
+    background: #EAF6F6;
+    
+    text-decoration: none;
+  }
+  
+  .contact-message{
+    width:40%;
+    margin: 40px auto 60px;
+  }
+  a{
+    color:#0D4C92;
+    margin: 10px 10px;
+    font-family:'Montserrat',sans-serif;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #ff7235;
+
+  }
+  .copyright{
+    color:#EAF6F6;
+    font-size: 1rem;
+    padding:20px 0;
+  }
+  .class1{
+    width:60%;
+    margin:auto;
+    padding: 80px;
+  }
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost',sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color:#ffffff;
+    --text-color:#000;
+    --second-color: #a09dab;
+    --main-color:#f75023;
+    --big-font:5rem;
+    --h2-font:3rem;
+    --p-font:1rem;
+}
+
+header{
+    position:fixed;
+    width: 85%;
+    top:0;
+    right:0;
+    z-index:1000;
+    display: flex;
+    align-items:centre;
+    justify-content:space-between;
+    background:transparent;
+    padding: 30px 18%;
+    transition:.3s; 
+  }
+  .navlist{
+    display:flex
+  }
+  .navlist li{
+    position: relative;
+    margin-top: 20px;
+  }
+  .navlist a{
+    font-size: var(--p-font);
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 10px 27px;
+  }
+  .navlist a::after{
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+background: var(--main-color);
+bottom:-3px;
+left:0;
+transition: ease;
+}
+.navlist a:hover::after{
+    width:100%;
+}
+.top-btn{
+    display:inline-block;
+    padding: 9px 30px;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 30px;
+    color: var(--text-color);
+    letter-spacing: 1px;
+    font-size: var(--p-font);
+    font-weight: 500;
+    transition: .50s;
+}
+
+.skills_section{
+    width: 100%;
+    height: 100vh;
+    padding: 10px 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills_head{
+    width: 100%;
+    margin-bottom: 100px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.skills_head h2{
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+.skills_head h2 span{
+    color: #e74d06;
+}
+.skills_main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+.skills_main .skill_bar .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 10px;
+}
+.skill_bar .info p:nth-child(2){
+    font-weight: 500;
+}
+.skill_bar .bar{
+    width: 80%;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.144);
+    border-radius: 25px;
+    margin-top: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.skill_bar .bar span{
+    display: table-cell;
+    width: 80%;
+    height: 10px;
+    position: absolute;
+    background-color: #ff7235;
+    border-radius: 25px;
+}
+.skill_bar .bar .html{
+    width: 90%;
+    animation: html 2s;
+}
+@keyframes html {
+    0%{
+        width: 0%;
+    }100%{
+        width: 90%;
+    }
+}
+.skill_bar .bar .css{
+    width: 85%;
+    animation: css 2s;
+}
+@keyframes css {
+    0%{
+        width: 0%;
+    }100%{
+        width: 85%;
+    }
+}
+.skill_bar .bar .sass{
+    width: 85%;
+    animation: sass 2s;
+}
+@keyframes sass {
+    0%{
+        width: 0%;
+    }100%{
+        width: 85%;
+    }
+}
+.skill_bar .bar .js{
+    width: 85%;
+    animation: css 2s;
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }100%{
+        width: 85%;
+    }
+}
+.skill_bar .bar .react{
+    width: 75%;
+    animation: react 2s;
+}
+@keyframes react {
+    0%{
+        width: 0%;
+    }100%{
+        width: 75%;
+    }
+}
+.skill_bar .bar .node{
+    width: 70%;
+    animation: node 2s;
+}
+@keyframes node {
+    0%{
+        width: 0%;
+    }100%{
+        width: 70%;
+    }
+}
+.skill_bar .bar .express{
+    width: 75%;
+    animation: express 2s;
+}
+@keyframes express {
+    0%{
+        width: 0%;
+    }100%{
+        width: 75%;
+    }
+}
+.skill_bar .bar .mongo{
+    width: 60%;
+    animation: mongo 2s;
+}
+@keyframes mongo {
+    0%{
+        width: 0%;
+    }100%{
+        width: 60%;
+    }
+}
